@@ -1,5 +1,6 @@
 ---
 title: ES6字符串扩展
+date: 2017-6-9 22:06:43
 tags: [JavaScript,ES6]
 ---
 

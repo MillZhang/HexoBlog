@@ -1,5 +1,6 @@
 ---
 title: JS函数式编程
+date: 2017-6-5 12:07:09
 tags: JavaScript
 ---
 

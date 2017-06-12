@@ -869,7 +869,8 @@ html {
 }
 
 .left-col {
-  background: #fff;
+  background: url(img/35603f4ea3b471885df8d4972a78b6df.jpeg) left top no-repeat;
+  background-size: cover;
   width: 300px;
   position: fixed;
   opacity: 1;
@@ -898,11 +899,13 @@ html {
 }
 
 .left-col #header a {
-  color: #696969
+  color: #f7f7f7
 }
 
 .left-col #header a:hover {
-  color: #b0a0aa
+  color: #ff945c;
+  padding-left: 5px;
+  font-weight: bold;
 }
 
 .left-col #header .header-subtitle {
@@ -955,7 +958,7 @@ html {
 
 .left-col #header .profilepic {
   display: block;
-  border: 5px solid #fff;
+  border: 0px solid #fff;
   border-radius: 300px;
   width: 128px;
   height: 128px;

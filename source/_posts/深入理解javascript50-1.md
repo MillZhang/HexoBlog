@@ -1,9 +1,14 @@
 ---
-title: 编写高质量Javascript的要点-Review深入理解Javascript系列(一)
+title: Review深入理解Javascript系列(一)
+date:   2017-6-12 22:05:55
 tags: JavaScript
 ---
 
-### 知识点!!!
+### 编写高质量的Javascript代码
+
+参考总结:
+* [汤姆大叔深入理解Javascript系列](http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html)
+* [看云](https://www.kancloud.cn/kancloud/deep-understand-javascript/43686)
 
 #### 最小全局变量Minimizing Global
 
