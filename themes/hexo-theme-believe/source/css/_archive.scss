@@ -1,11 +1,9 @@
 .archive {
   padding-bottom: 60px;
-
   h2.year {
     color: #444444;
     padding-left: 1em;
   }
-
   ul.list {
     padding-left: 50px;
     li {
@@ -17,4 +15,8 @@
     margin-right: 30px;
     color: #7f8c8d;
   }
+}
+
+.fa-tags:before {
+  color: #bc223d;
 }

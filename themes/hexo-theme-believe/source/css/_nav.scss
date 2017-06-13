@@ -89,6 +89,9 @@ a.header-name {
         padding: 6px;
         letter-spacing: 1px;
         text-shadow: 0 0 1px rgba(0, 0, 0, .1);
+        .fa-tags:before {
+          color: inherit;
+        }
         &:hover {
           opacity: 1;
           border-radius: 3px;
