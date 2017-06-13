@@ -54,7 +54,7 @@ weixin:
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
-favicon: /favicon.png
+favicon: /assets/favicon.ico
 
 #你的头像url
 avatar: /assets/images/avatar.jpg
@@ -83,7 +83,7 @@ style:
   # 头像上面的背景颜色
   header: 'transparnt'
   # 右滑板块背景
-  slider: 'linear-gradient(200deg,#a0cfe4,#e8c37e)'
+  slider: 'linear-gradient(200deg,#000000,#81919e)'
 
 # slider的设置
 slider:

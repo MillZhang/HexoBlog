@@ -2365,7 +2365,7 @@ pre .id {
 .article-entry h4,
 .article-entry h5,
 .article-entry h6 {
-  margin-top: 20px;
+  margin-top: 60px;
   font-weight: 700;
   color: #574c4c;
   padding-bottom: 5px;
@@ -3986,4 +3986,8 @@ a.pswp__share--download:hover {
 .pswp__error-msg a {
   color: #ccc;
   text-decoration: underline
+}
+
+.show .article-title {
+  color: #fff;
 }
