@@ -38,7 +38,7 @@ layout: page
             <i class="fa fa-calendar" aria-hidden="true"></i> <%= post.date.format(config.date_format) %>
             <i class="fa fa-tags" data-index="<%= parseInt(Math.random()*7) %>" aria-hidden="true" style="margin-left:12px;"></i>
             <% post.tags.each(function(tag,index){ %>
-              <a href="<%= config.root %>tags/#<%= tag.name %>/" rel="tag" style="color: #42b983;margin-right:5px;">
+              <a href="<%= config.root %>tags/#<%= tag.name %>/" rel="tag" class="index-tag">
                 <%- tag.name %>
               </a>
             <% }); %>

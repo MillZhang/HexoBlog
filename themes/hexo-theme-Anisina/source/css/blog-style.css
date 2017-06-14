@@ -28,8 +28,8 @@ html::-webkit-scrollbar-track {
   background-color: #F5F5F5;
 }
 
-.fa-tags:before {
-  color: #bc223d;
+.fa-tags {
+  margin-right: 5px;
 }
 
 .fa-tags[data-index="0"]:before {
@@ -599,6 +599,19 @@ a:focus {
   padding-left: 2px;
   margin-bottom: 15px;
   margin-top: 12px;
+}
+
+.post-preview .post-meta .index-tag {
+  color: #42b983;
+  margin-right: 5px;
+}
+
+.custom-haojen-container .post-preview:nth-child(1) .fa:before {
+  color: #fff;
+}
+
+.custom-haojen-container .post-preview:nth-child(1) .post-meta>a {
+  color: #fff;
 }
 
 .post-preview .post-meta>.fa {
