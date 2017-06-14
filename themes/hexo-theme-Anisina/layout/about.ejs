@@ -1,0 +1,103 @@
+---
+layout: layout
+---
+    <%- js('js/jquery.min.js') %>
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display+SC:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+    <%- css('css/kube.min.css') %>
+    <%- css('css/custom.min.css') %>
+    <script src="https://cdn.bootcss.com/typed.js/1.1.7/typed.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        Typed.new("#typed", {
+            strings: ["Just Call Me Mill!",
+                    "A front-end engineer.",
+                    "Now Living in Suzhou,",
+                    "working for a Start-up company!",
+                    "......Eh......",
+                    "Mm",
+                    "Where there is life,",
+                    "there is hope!",
+                    "Haha"],
+            typeSpeed:90,
+            backDelay:1000,
+            contentType:"html",
+            loop:!0
+        });
+    });
+    </script>
+    <!-- Introduction -->
+    <div class="intro section" id="about">
+        <div class="container">
+            <p>Hi, I’m MillZhang</p>
+            <div class="units-row units-split wrap">
+                <div class="unit-20">
+                    <img src="http://oritfw5nq.bkt.clouddn.com/avatar.jpg?imageslim" alt="Avatar">
+                </div>
+                <div class="unit-80">
+                    <h1>Hey Buddy:<br><span id="typed"></span></h1>                  
+                </div>
+                <p>
+                    Few things are impossible in themselves; and it is often for want of will, rather than of means, that man fails to succeed.
+                </p>                
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="work section second" id="experiences">
+        <div class="container">
+            <h1>Work Experiences</h1>
+            <ul class="work-list">
+                <li>2013.12-2015.03</li>
+                <li><a href="#">Isoftstone In Nanjing</a></li>
+                <li>Java Web Development Engineer</li>
+            </ul>
+            <ul class="work-list">
+                <li>2015.03-2016.02</li>
+                <li><a href="#">Nanjing jibinfo</a></li>
+                <li>Front End Development Engineer</li>
+            </ul>
+            <ul class="work-list">
+                <li>2016.03-Now</li>
+                <li><a href="#">Suchou Beumu</a></li>
+                <li>Front End Development Engineer</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="skills section second" id="skills">
+        <div class="container">
+            <h1>Technical Skills</h1>
+            <ul class="skill-list list-flat">
+                <li>Web Technology</li>
+                <li>HTML / CSS / SASS / Javascript</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Tools</li>
+                <li>Sublime / Webstorm / Atom / Idea / SVN / Git</li>
+            </ul>
+            <ul class="skill-list list-flat">
+                <li>Framework & Library</li>
+                <li>Vue & Vuex / Anuglar / jQuery / Zepto</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="units-row">
+                <div class="unit-50">
+                    <p>Contact Me By</p>
+                </div>
+                <div class="unit-50">
+                    <ul class="social list-flat right">
+                        <li><a href="mailto:876753183@qq.com"><i class="fa fa-send"></i></a></li>
+                        <li><a href="https://github.com/MillZhang"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://weibo.com/mauvelather"><i class="fa fa-weibo"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
