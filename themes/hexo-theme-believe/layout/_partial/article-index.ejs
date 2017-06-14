@@ -21,8 +21,8 @@
     	<%= item.date.format(config.date_format) %>
     </p>
     <div class="tags-links">
-      <i class="fa fa-tags" aria-hidden="true"></i>
-      <% item.tags.each(function(tag){ %>
+      <% item.tags.each(function(tag,index){ %>
+      <i class="fa fa-tags" data-index="<%= parseInt(Math.random()*7) %>" aria-hidden="true"></i>
       <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag">
         <%- tag.name %>
       </a>

@@ -20,3 +20,71 @@
 .fa-tags:before {
   color: #bc223d;
 }
+
+.fa-tags[data-index="0"]:before {
+  color: #bc223d;
+}
+
+.fa-tags[data-index="1"]:before {
+  color: #fd5f00;
+}
+
+.fa-tags[data-index="2"]:before {
+  color: #f5da0b;
+}
+
+.fa-tags[data-index="3"]:before {
+  color: #0bf534;
+}
+
+.fa-tags[data-index="4"]:before {
+  color: #0b46f5;
+}
+
+.fa-tags[data-index="5"]:before {
+  color: #0bf5d6;
+}
+
+.fa-tags[data-index="6"]:before {
+  color: #720bf5;
+}
+
+.tagList {
+  position: fixed;
+  right: 20px;
+  width: 200px;
+  transition: all .2s ease;
+}
+
+.tagList ul {
+  width: 100%;
+}
+
+.tagList ul li {
+  display: inline-block;
+}
+
+.tagList a {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  padding: 0 10px;
+  color: #a0a0a0;
+  line-height: 24px;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0 1px;
+  margin-bottom: 6px;
+  border-color: #bfbfbf;
+}
+
+@media only screen and (max-width: 1180px) {
+  .tagList {
+    display: none;
+  }
+}
+
+.tagList a:hover {
+  border-color: #fd7610;
+  color: #fd7610;
+}
