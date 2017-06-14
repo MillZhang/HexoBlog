@@ -75,6 +75,13 @@ deploy:
     repo: git@github.com:MillZhang/millzhang.github.io.git
     branch: master
 
+tag_generator:
+  per_page: 10
+
+search: 
+    path: search.xml
+    field: post
+
 #feed
 atom:
   type: atom

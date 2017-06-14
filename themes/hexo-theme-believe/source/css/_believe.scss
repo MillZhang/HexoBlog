@@ -17,6 +17,24 @@ html::-webkit-scrollbar-track {
   background-color: #F5F5F5;
 }
 
+.border-bottom {
+  padding: 10px;
+  display: block;
+  color: #999;
+  text-decoration: none;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid #DDD;
+  background: #FFF;
+  width: 20px;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1.25;
+  z-index: 1000;
+  opacity: 0;
+}
+
 
 /*--------------------------------------------------------------
 Reset
@@ -237,6 +255,11 @@ hr {
   border-top: #d3d3d3 1px solid;
   margin: 40px 0;
   padding: 0;
+}
+
+a#more {
+  margin: 0;
+  border-top: none;
 }
 
 ol,
