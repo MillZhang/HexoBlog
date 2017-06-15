@@ -3,32 +3,9 @@ layout: layout
 ---
 
 <!--only post-->
-<% if (page['wechat-share']) { %>
-
-<img class="wechat-title-img"
-     src="<%- config['cdn-url'] %> <%= page['wechat-share'] || page['header-img']+config.clipImage %> <%- config['cdn-url'] ? config['clip-content'] : '' %>">
-<% } else{ %>
-<% if (page["cdn"] === 'header-off'){ %>
-<img class="wechat-title-img" src="<%= page["header-img"]+config.clipImage || config["post-default-img"]+config.clipImage %>">
-<% } else { %>
-<img class="wechat-title-img"
-     src="<%- page['header-img'] ? config['cdn-url'] + page["header-img"]+config.clipImage : config["post-default-img"]+config.clipImage %>">
-<% } %>
-<% } %>
-<style>
-    <% if (page["cdn"] === 'header-off'){%>
-    header.intro-header {
-        background-image: url('<%= page["header-img"] || config["post-default-img"] +config.clipImage %>');
-    }
-
-    <%} else {%>
-    header.intro-header {
-        background-image: url('<%- page["header-img"]?config["cdn-url"]+page["header-img"]+config.clipImage : config["post-default-img"]+config.clipImage %>')
-    }
-
-    <% } %>
-</style>
-
+<% var headOnImage =  page["header-img"]?config["cdn-url"]+page["header-img"]+config.clipImage 
+                        :config["post-default-img"]+config.clipImage;
+  var headerOffImage = page["header-img"] || config["post-default-img"] +config.clipImage %>
 <header class="intro-header">
     <div class="container">
         <div class="row">
@@ -58,6 +35,13 @@ layout: layout
         <span>
             <%- page.title %>
         </span>
+    </div>
+    <div class="post-header-image">
+        <% if (page["cdn"] === 'header-off'){%>
+            <img class="blur" src="<%= headerOffImage%>">
+        <%} else {%>
+            <img class="blur" src="<%= headOnImage%>">
+         <% } %>
     </div>
 </header>
 

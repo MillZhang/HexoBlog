@@ -144,7 +144,7 @@ cdn-url: http://oritfw5nq.bkt.clouddn.com/
 clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/70"
 clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/70"
 clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
-clipImage: "?imageView2/0/format/jpg/interlace/1/q/65|watermark/2/text/QnkgTWlsbHpoYW5n/font/5b6u6L2v6ZuF6buR/fontsize/480/fill/I0ZERkRGRA==/dissolve/56/gravity/SouthEast/dx/10/dy/10|imageslim"
+clipImage: "?imageView2/0/format/jpg/interlace/1/q/85|watermark/2/text/QnkgTWlsbHpoYW5n/font/5b6u6L2v6ZuF6buR/fontsize/480/fill/I0ZERkRGRA==/dissolve/56/gravity/SouthEast/dx/10/dy/10|imageslim"
 
 # post default images
 post-default-img: http://oritfw5nq.bkt.clouddn.com/wall-303.jpg

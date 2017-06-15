@@ -4,13 +4,16 @@ layout: page
 <!-- Main Content -->
 
 <% page.posts.each(function(post){ %>
+<% var headOnImage =  post["header-img"] ? config["cdn-url"] + post["header-img"]+config.clipImage : config["post-default-img-mobile"]+config.clipImage;
+  var headerOffImage = post["header-img"]+config.clipImage || config["post-default-img"]+config.clipImage; %>
 <% if (post["cdn"] === 'header-off') { %>
-<div class="post-preview  <%- post.layout === 'poetry' ? 'post-preview-poetry' : '' %>"
-     style="background-image: url('<%- post["header-img"]+config.clipImage || config["post-default-img"]+config.clipImage %>')">
-    <a href="<%- config.root %><%- post.path %>">
-        <h2 class="post-title">
-            <%- post.title || "未命名" %>
-        </h2>
+<div class="post-preview  <%- post.layout === 'poetry' ? 'post-preview-poetry' : '' %>">
+    <div class="post-preview-content">
+        <a href="<%- config.root %><%- post.path %>">
+            <h2 class="post-title">
+                <%- post.title || "未命名" %>
+            </h2>
+        </a>
         <p class="post-meta">
             <i class="fa fa-calendar" aria-hidden="true"></i> <%= post.date.format(config.date_format) %>
         </p>
@@ -24,16 +27,19 @@ layout: page
                 <%- truncate(strip_html(post.content), {length: 150, omission: '..'}) %>
             </p>
         </div>
-    </a>
-
+    </div>
+    <div class="post-preview-image">
+        <img src="<%= headOffImage%>">
+    </div>
 </div>
 <% } else { %>
-<div class="post-preview <%- post.layout === 'poetry' ? 'post-preview-poetry' : '' %>"
-     style="background-image: url('<%- post["header-img"] ? config["cdn-url"] + post["header-img"]+config.clipImage : config["post-default-img-mobile"]+config.clipImage %>')">
-    <a href="<%- config.root %><%- post.path %>">
-        <h2 class="post-title">
-            <%- post.title || "未命名" %>
-        </h2>
+<div class="post-preview <%- post.layout === 'poetry' ? 'post-preview-poetry' : '' %>">
+    <div class="post-preview-content">
+        <a href="<%- config.root %><%- post.path %>">
+            <h2 class="post-title">
+                <%- post.title || "未命名" %>
+            </h2>
+        </a>
         <p class="post-meta">
             <i class="fa fa-calendar" aria-hidden="true"></i> <%= post.date.format(config.date_format) %>
             <i class="fa fa-tags" data-index="<%= parseInt(Math.random()*7) %>" aria-hidden="true" style="margin-left:12px;"></i>
@@ -53,8 +59,10 @@ layout: page
                 <%- truncate(strip_html(post.content), {length: 150, omission: '..'}) %>
             </p>
         </div>
-    </a>
-
+    </div>
+    <div class="post-preview-image">
+        <img src="<%= headOnImage%>">
+    </div>
 </div>
 <% } %>
 <hr>

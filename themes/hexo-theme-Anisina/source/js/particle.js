@@ -97,9 +97,9 @@ let init = function(num) {
   draw();
 }
 
-let initSize = 100;
+let initSize = 60;
 if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
-  initSize = 40;
+  initSize = 20;
 }
 window.addEventListener('load', init(initSize));
 window.onmousemove = function(e) {
@@ -112,3 +112,12 @@ window.onmouseout = function() {
   current_circle.y = null;
 
 };
+
+window.onresize = function() {
+  // let w = canvas.width = canvas.offsetWidth;
+ // let h = canvas.height = canvas.offsetHeight;
+ // let circles = [];
+ // let current_circle = new currentCirle(0, 0)
+ // init(initSize)
+
+}

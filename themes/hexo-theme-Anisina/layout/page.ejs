@@ -18,7 +18,34 @@ layout: layout
         flex-wrap:wrap;
         align-items: center;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.16);
+        position:relative;
+    }
+
+    .custom-haojen-container .post-preview .post-preview-image{
+        display:none;
+    }
+
+    .custom-haojen-container .post-preview:nth-of-type(1) .post-preview-image{
+        display:block;
+        position:absolute;
+        width:100%;
+        left:0;
+        top:0;
+        height:100%;
+        z-index:-1;
+       overflow:hidden;
+    }
+
+    .custom-haojen-container .post-preview:nth-of-type(1) .post-preview-image img{
+        margin:0;
+        width:100%;
+    }
+
+    .custom-haojen-container .post-preview:nth-of-type(1) .post-preview-image img.blur{
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+       -moz-filter: blur(5px);
+        -ms-filter: blur(5px);    
+            filter: blur(5px);
     }
 
     /*去掉诗歌的背景图片*/
