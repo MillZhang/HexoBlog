@@ -268,7 +268,7 @@ article .post-container h4,
 article .post-container h5,
 article .post-container h6 {
   margin-top: -90px;
-  padding: 100px 0 0;
+  padding: 100px 0 20px;
 }
 
 article blockquote footer {
