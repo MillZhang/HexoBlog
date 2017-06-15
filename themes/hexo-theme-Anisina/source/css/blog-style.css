@@ -272,8 +272,15 @@ pre code {
 }
 
 .post-container a {
-  color: #337ab7;
+  color: #42b983;
   position: relative;
+  transition: all .2s ease;
+}
+
+.post-container a:hover {
+  color: #ff9f0f;
+  text-decoration: underline;
+  padding-left: 0.4em;
 }
 
 .headerlink:after {
@@ -283,6 +290,24 @@ pre code {
   left: -1em;
   top: 1px;
   font-size: 1.2em;
+  font-weight: bold;
+}
+
+.post-container h4 {
+  padding-left: 20px;
+}
+
+.post-container h4>a {
+  margin-left: 20px;
+}
+
+.post-container h4>.headerlink:after {
+  content: "##";
+  color: #42b983;
+  position: absolute;
+  left: -1.4em;
+  top: 0.2em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -1064,6 +1089,12 @@ img::-moz-selection {
   max-width: 100%;
   height: auto;
   margin: 1.5em auto 1.6em auto;
+}
+
+.post-container ul>li img {
+  display: inline-table;
+  margin-right: 5px;
+  width: 2em;
 }
 
 

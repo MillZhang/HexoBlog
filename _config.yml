@@ -154,9 +154,9 @@ post-default-img-mobile: http://oritfw5nq.bkt.clouddn.com/wall-303.jpg
 swiftype_key: 
 
 indexMusic: 25731320
-indexMusicAuto: false
+indexMusicAuto: 0 # 1自动0手动
 defaultMusic: 18803411
-defaultMusicAuto: false
+defaultMusicAuto: 0
 # archive page title 
 archive:
     title: archives

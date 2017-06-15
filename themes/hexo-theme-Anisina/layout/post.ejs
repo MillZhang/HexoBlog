@@ -120,9 +120,9 @@ layout: layout
 </article>
 <!-- 网易云音乐-->
 <% var musicId=page.music ? page.music : config.defaultMusic,
-       isAuto = page.musicAuto ? page.musicAuto : config.defaultMusicAuto;
+       isAuto = page.auto ? page.auto : config.defaultMusicAuto;
     if(musicId == undefined){ musicId = 586299};
-    var musicLink = '//music.163.com/outchain/player?type=2&id='+musicId+'&auto='+Number(isAuto)+'&height=66';
+    var musicLink = '//music.163.com/outchain/player?type=2&id='+musicId+'&auto='+isAuto+'&height=66';
  %>
 <iframe class="cloud-music" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
     src="<%= musicLink %>">
