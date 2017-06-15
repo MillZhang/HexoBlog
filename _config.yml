@@ -12,7 +12,7 @@ timezone:
 # custom Site settings
 # more detail check out docs
 SEOTitle: MillZhang's blog 
-header-img: http://oritfw5nq.bkt.clouddn.com/10dbe1c29374b2b70b4ef3dfd8356e97.jpg
+header-img: http://oritfw5nq.bkt.clouddn.com/home-bg-2-dark.png?imageView2/1/w/1280/h/300/format/jpg/interlace/1/q/75|watermark/2/text/TWlsbFpoYW5n/font/5b6u6L2v6ZuF6buR/fontsize/560/fill/I0Y2RjBGMA==/dissolve/72/gravity/SouthEast/dx/10/dy/10|imageslim
 email: 876753183@qq.com
 description: 
 keyword: # seo key words
@@ -141,9 +141,10 @@ cdn-url: http://oritfw5nq.bkt.clouddn.com/
 
 # Qiniu imageView2 API
 # More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
-clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/90"
-clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
+clip-content: "?imageView2/1/w/1400/h/400/interlace/1/q/70"
+clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/70"
 clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
+clipImage: "?imageView2/0/format/jpg/interlace/1/q/65|watermark/2/text/QnkgTWlsbHpoYW5n/font/5b6u6L2v6ZuF6buR/fontsize/480/fill/I0ZERkRGRA==/dissolve/56/gravity/SouthEast/dx/10/dy/10|imageslim"
 
 # post default images
 post-default-img: http://oritfw5nq.bkt.clouddn.com/wall-303.jpg

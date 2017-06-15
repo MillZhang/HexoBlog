@@ -6,24 +6,24 @@ layout: layout
 <% if (page['wechat-share']) { %>
 
 <img class="wechat-title-img"
-     src="<%- config['cdn-url'] %> <%= page['wechat-share'] || page['header-img'] %> <%- config['cdn-url'] ? config['clip-content'] : '' %>">
+     src="<%- config['cdn-url'] %> <%= page['wechat-share'] || page['header-img']+config.clipImage %> <%- config['cdn-url'] ? config['clip-content'] : '' %>">
 <% } else{ %>
 <% if (page["cdn"] === 'header-off'){ %>
-<img class="wechat-title-img" src="<%= page["header-img"] || config["post-default-img"] %>">
+<img class="wechat-title-img" src="<%= page["header-img"]+config.clipImage || config["post-default-img"]+config.clipImage %>">
 <% } else { %>
 <img class="wechat-title-img"
-     src="<%- page['header-img'] ? config['cdn-url'] + page["header-img"] : config["post-default-img"] %>">
+     src="<%- page['header-img'] ? config['cdn-url'] + page["header-img"]+config.clipImage : config["post-default-img"]+config.clipImage %>">
 <% } %>
 <% } %>
 <style>
     <% if (page["cdn"] === 'header-off'){%>
     header.intro-header {
-        background-image: url('<%= page["header-img"] || config["post-default-img"]%>');
+        background-image: url('<%= page["header-img"] || config["post-default-img"] +config.clipImage %>');
     }
 
     <%} else {%>
     header.intro-header {
-        background-image: url('<%- page["header-img"]?config["cdn-url"]+page["header-img"]+config["clip-content"] : config["post-default-img"]%>')
+        background-image: url('<%- page["header-img"]?config["cdn-url"]+page["header-img"]+config.clipImage : config["post-default-img"]+config.clipImage %>')
     }
 
     <% } %>
