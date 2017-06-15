@@ -12,7 +12,7 @@ timezone:
 # custom Site settings
 # more detail check out docs
 SEOTitle: MillZhang's blog 
-header-img: http://oritfw5nq.bkt.clouddn.com/home-bg-2-dark.png?imageView2/1/w/1280/h/300/format/jpg/interlace/1/q/75|watermark/2/text/TWlsbFpoYW5n/font/5b6u6L2v6ZuF6buR/fontsize/560/fill/I0Y2RjBGMA==/dissolve/72/gravity/SouthEast/dx/10/dy/10|imageslim
+header-img: http://oritfw5nq.bkt.clouddn.com/home-bg-2-dark.png
 email: 876753183@qq.com
 description: 
 keyword: # seo key words
@@ -153,7 +153,10 @@ post-default-img-mobile: http://oritfw5nq.bkt.clouddn.com/wall-303.jpg
 # search api , set your custom key
 swiftype_key: 
 
-
+indexMusic: 586299
+indexMusicAuto: false
+defaultMusic: 586299
+defaultMusicAuto: false
 # archive page title 
 archive:
     title: archives
