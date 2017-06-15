@@ -34,12 +34,6 @@ html::-webkit-scrollbar-track {
   left: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .cloud-music {
-    width: 5em;
-  }
-}
-
 .fa-tags {
   margin-right: 5px;
 }
@@ -80,6 +74,15 @@ html::-webkit-scrollbar-track {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .cloud-music {
+    width: 5em;
+  }
+  #canvas {
+    display: none;
+  }
 }
 
 .border-bottom {
@@ -500,6 +503,13 @@ article blockquote cite:before {
   width: 100%;
 }
 
+@media (max-width: 750px) {
+  .intro-header .post-header-image>img {
+    width: auto;
+    height: 100%;
+  }
+}
+
 .intro-header .post-header-image>img.blur {
   -webkit-filter: blur(10px);
   -moz-filter: blur(5px);
@@ -590,6 +600,7 @@ article blockquote cite:before {
 
 .post-preview {
   transition: all .2s ease;
+  overflow: hidden;
 }
 
 .post-preview > a {

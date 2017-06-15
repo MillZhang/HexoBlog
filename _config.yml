@@ -153,9 +153,9 @@ post-default-img-mobile: http://oritfw5nq.bkt.clouddn.com/wall-303.jpg
 # search api , set your custom key
 swiftype_key: 
 
-indexMusic: 586299
+indexMusic: 25731320
 indexMusicAuto: false
-defaultMusic: 586299
+defaultMusic: 18803411
 defaultMusicAuto: false
 # archive page title 
 archive:
