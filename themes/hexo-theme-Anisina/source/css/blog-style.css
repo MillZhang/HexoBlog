@@ -283,6 +283,10 @@ pre code {
   padding-left: 0.4em;
 }
 
+.post-preview-content a:hover {
+  padding-left: 0;
+}
+
 .headerlink:after {
   content: "#";
   color: #42b983;
